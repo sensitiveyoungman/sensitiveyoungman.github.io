@@ -4,14 +4,33 @@
   <meta charset="UTF-8">
   <title>Мой сайт</title>
   <style>
-    .big-green {
-      font-size: 72px;
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* вертикальное центрирование */
+      align-items: center;     /* горизонтальное центрирование */
+      min-height: 100vh;       /* чтобы занимало весь экран */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* светлый фон, можно убрать */
+    }
+
+    h1 {
       color: green;
+      font-size: 72px;
       text-align: center;
+      margin: 0 0 20px 0; /* отступ снизу для картинки */
+    }
+
+    img {
+      max-width: 80%; /* адаптивно под размер экрана */
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <p class="big-green">ЗОМБИ ЧИПСЫ</p>
+  <h1>Привет, мир!</h1>
+  <img src="photo_2025-09-15_15-28-34.jpg">
 </body>
 </html>
